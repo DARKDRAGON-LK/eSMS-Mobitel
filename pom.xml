@@ -2,13 +2,25 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>esms-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>lk.mobitel.esms</groupId>
+    <artifactId>esmslib</artifactId>
+    <version>4.0.0</version>
 
     <dependencies>
-        <!-- Add dependencies here -->
+        <!-- JitPack Dependency -->
+        <dependency>
+            <groupId>com.github.DARKDRAGON-LK</groupId>
+            <artifactId>esmslib</artifactId>
+            <version>4.0.0</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
