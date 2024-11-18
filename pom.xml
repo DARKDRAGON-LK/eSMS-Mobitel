@@ -6,16 +6,22 @@
     <artifactId>esmslib</artifactId>
     <version>4.0.0</version>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <!-- JitPack Dependency -->
         <dependency>
             <groupId>com.github.DARKDRAGON-LK</groupId>
-            <artifactId>esmslib</artifactId>
+            <artifactId>eSMS-Mobitel</artifactId>
             <version>4.0.0</version>
         </dependency>
     </dependencies>
 
     <repositories>
+        <!-- JitPack Repository -->
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -24,13 +30,14 @@
 
     <build>
         <plugins>
+            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
         </plugins>
